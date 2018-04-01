@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ FROSIT     Enterprise eCommerce - Information Security
+  ~
+  ~ @author    Fabio Ros <fabio@frosit.nl>
+  ~ @copyright Copyright (c) 2018 Fabio (H.J.C.) Ros <fabio@frosit.nl> (https://frosit.nl)
+  ~ @license   http://frosit.nl/license FROSIT Proprietary license - All Rights Reserved
+  ~
+  ~ For the full copyright and license information, please view the LICENSE
+  ~ file that was distributed with this source code. If no license is present, refer to the license URL.
+  ~ This code is by default copyright protected under Dutch law and property of the author as specified above.
+  -->
+
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:framework:Ui/etc/ui_configuration.xsd">
+    <listingToolbar name="listing_top">
+        <massaction name="listing_massaction">
+            <action name="frosit_addresslabel">
+                <argument name="data" xsi:type="array">
+                    <item name="config" xsi:type="array">
+                        <item name="type" xsi:type="string">frosit_addresslabel</item>
+                        <item name="label" xsi:type="string" translate="true">Print Addresses</item>
+                        <item name="url" xsi:type="url" path="frosit_addresslabel/order/pdforders"/>
+                    </item>
+                </argument>
+            </action>
+        </massaction>
+    </listingToolbar>
+</listing>
+

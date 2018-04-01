@@ -1,0 +1,40 @@
+{
+  "name": "frosit/module-addresslabel-m2",
+  "description": "Prints orders as address labels",
+  "type": "magento2-module",
+  "license": "OSL-3.0",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "email": "fabio@frosit.nl",
+      "role": "developer",
+      "homepage": "https://frosit.nl",
+      "name": "Fabio Ros"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Frosit\\AddressLabel\\": ""
+    },
+    "files": [
+      "registration.php"
+    ]
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://repo.magento.com"
+    }
+  ],
+  "require": {
+    "php": "~5.6.0|7.0.2|7.0.4|~7.0.6|~7.1.0",
+    "magento/framework": "^100.0 | ^101.0.0",
+    "magento/module-backend": "^100.1.0",
+    "magento/module-sales": "^100.1.0 | ^101.0.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.2"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

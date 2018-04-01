@@ -1,0 +1,5 @@
+## FROSIT Product Selector
+.DS_*
+/node_modules
+/vendor/
+/.idea/

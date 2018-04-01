@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<!--
+  ~ FROSIT     Enterprise eCommerce - Information Security
+  ~
+  ~ @author    Fabio Ros <fabio@frosit.nl>
+  ~ @copyright Copyright (c) 2018 Fabio (H.J.C.) Ros <fabio@frosit.nl> (https://frosit.nl)
+  ~ @license   http://frosit.nl/license FROSIT Proprietary license - All Rights Reserved
+  ~
+  ~ For the full copyright and license information, please view the LICENSE
+  ~ file that was distributed with this source code. If no license is present, refer to the license URL.
+  ~ This code is by default copyright protected under Dutch law and property of the author as specified above.
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+
+        <tab id="frosit" sortOrder="999" translate="label">
+            <label>FROSIT</label>
+        </tab>
+
+        <section id="addresslabel" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+            <label>Address Labels</label>
+            <tab>frosit</tab>
+            <resource>Frosit_AddressLabel::config_frosit_addresslabel</resource>
+
+            <group id="settings" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+                <label>Settings</label>
+                <field id="font_size" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="30"
+                       translate="label">
+                    <label>Font size</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
