@@ -62,8 +62,8 @@ class PrintAction extends \Magento\Backend\App\Action
         \Magento\Sales\Api\OrderRepositoryInterface $orderRepository,
         \Frosit\AddressLabel\Model\Pdf\AddressFactory $addressPdfFactory,
         \Magento\Framework\Stdlib\DateTime\DateTime $date
-    )
-    {
+    ) {
+    
         parent::__construct($context);
         $this->fileFactory = $fileFactory;
         $this->resultRedirectFactory = $context->getResultRedirectFactory();
@@ -98,7 +98,7 @@ class PrintAction extends \Magento\Backend\App\Action
                 return $this->fileFactory->create(
                     'address-' . $order->getIncrementId() . '.pdf',
                     $pdf->render(),
-                    DirectoryList::VAR_DIR,
+                    DirectoryList::TMP,
                     'application/pdf'
                 );
             }

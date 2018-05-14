@@ -1,34 +1,23 @@
 Frosit AddressLabel Print - For Magento 2
-==================================================================================
+=========================================
 
 Description
 -----------
 
-...
+This extensions allows store owners to print address labels per order or in bulk.
 
 Requirements
 ------------
 
-...
-
-Compatibility
--------------
-
-...
-
-Installation Instructions
--------------------------
-
-...
-
+* Magento > 2.0
+* PHP > 5.6
 
 Developer
 ---------
 
-This module was created by [Magento Certified Full-stack developer](https://u.magento.com/certification/directory/dev/520577/) Fabio Ros (FROSIT).
-For technical matters, feel free to reach out to me.
+This module was created by [Fabio Ros (Magento Certified Full-Stack developer)](https://u.magento.com/certification/directory/dev/520577/) at [FROSIT](https://frosit.nl).
 
-* [http://www.frosit.nl](http://www.frosit.nl)
+* [https://frosit.nl](https://frosit.nl)
 * [@fros_it](https://twitter.com/fros_it)
 * [Github](https://github.com/frosit)
 * [fabio@frosit.nl](mailto:fabio@frosit.nl)

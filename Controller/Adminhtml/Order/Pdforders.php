@@ -61,8 +61,8 @@ class Pdforders extends \Magento\Sales\Controller\Adminhtml\Order\AbstractMassAc
         \Magento\Framework\App\Response\Http\FileFactory $fileFactory,
         \Frosit\AddressLabel\Model\Pdf\AddressFactory $addressPdfFactory,
         \Magento\Framework\Stdlib\DateTime\DateTime $date
-    )
-    {
+    ) {
+    
         $this->collectionFactory = $collectionFactory;
         $this->fileFactory = $fileFactory;
         $this->addressPdfFactory = $addressPdfFactory;
@@ -91,7 +91,7 @@ class Pdforders extends \Magento\Sales\Controller\Adminhtml\Order\AbstractMassAc
         return $this->fileFactory->create(
             'addresses-' . $date . '.pdf',
             $pdf->render(),
-            DirectoryList::VAR_DIR,
+            DirectoryList::TMP,
             'application/pdf'
         );
     }

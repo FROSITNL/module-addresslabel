@@ -31,8 +31,8 @@ class PrintOrderButton extends \Magento\Backend\Block\Widget\Container
         \Magento\Backend\Block\Widget\Context $context,
         \Magento\Framework\Registry $registry,
         array $data = []
-    )
-    {
+    ) {
+    
         $this->coreRegistry = $registry;
         parent::__construct($context, $data);
     }

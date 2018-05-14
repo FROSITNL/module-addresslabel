@@ -1,6 +1,6 @@
 {
-  "name": "frosit/module-addresslabel-m2",
-  "description": "Prints orders as address labels",
+  "name": "frosit/module-addresslabel",
+  "description": "Prints address labels for Magento orders.",
   "type": "magento2-module",
   "license": "OSL-3.0",
   "version": "1.0.0",

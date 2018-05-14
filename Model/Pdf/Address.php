@@ -42,7 +42,6 @@ class Address extends AbstractPdf
         $fontSize = $this->_scopeConfig->getValue(self::XML_PATH_FONT_SIZE);
 
         foreach ($orders as $order) {
-
             $page = $this->newPage();
             $this->_setFontRegular($page, $fontSize);
             $order->setOrder($order);
@@ -56,7 +55,6 @@ class Address extends AbstractPdf
 
             foreach ($shippingAddress as $value) {
                 if ($value !== '') {
-
                     // name in bold
                     if ($value === $name) {
                         $this->_setFontBold($page, $fontSize);
@@ -79,7 +77,6 @@ class Address extends AbstractPdf
                     }
                 }
             }
-
         }
         $this->_afterGetPdf();
         return $pdf;
